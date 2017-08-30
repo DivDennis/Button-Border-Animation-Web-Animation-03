@@ -1,0 +1,63 @@
+.btn-style{
+    background-color: lightblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Franklin Gothic Book";
+    font-size: 1em;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-style:before,
+.btn-style:after{
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style:solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.btn-style:before{
+    border-color: lightblue;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.btn-style:after{
+    border-color: lightblue;
+    border-bottom-width: 2px;
+    right: 0px;
+    bottom: -5px;
+}
+
+.btn-style:hover,
+.btn-style.hover{
+    background-color: lightblue;
+}
+
+.btn-style:hover:before,
+.btn-style.hover:before,
+.btn-style:hover:after,
+.btn-style:hover.after{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #212121;
+    padding: 50px 0;
+    text-align: center;
+}
